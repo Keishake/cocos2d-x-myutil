@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>Node</string>
+			<key>Description</key>
+			<string>継承するクラスを入力してね！</string>
+			<key>Identifier</key>
+			<string>cocos2DXv3b2Subclass</string>
+			<key>Name</key>
+			<string>継承クラス：</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Type</key>
+			<string>combo</string>
+			<key>Values</key>
+			<array>
+				<string>Node</string>
+				<string>Layer</string>
+                <string>TableView</string>
+			</array>
+		</dict>
+        <dict>
+            <key>Default</key>
+            <string>false</string>
+            <key>Identifier</key>
+            <string>Singleton</string>
+            <key>Name</key>
+            <string>Singleton</string>
+            <key>RequiredOptions</key>
+            <dict>
+                <key>cocoaTouchSubclass</key>
+                <array>
+                    <string>Node</string>
+                </array>
+            </dict>
+            <key>Type</key>
+            <string>checkbox</string>
+        </dict>
+	</array>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.c-plus-plus-source</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>MyCocos2DXClass</string>
+	<key>Description</key>
+	<string>cocos2dx用に.h/.cppを作成します</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.cpp</string>
+	<key>SortOrder</key>
+	<string>2</string>
+	<key>Summary</key>
+	<string>cocos2dx用に.h/.cppを作成します</string>
+</dict>
+</plist>
