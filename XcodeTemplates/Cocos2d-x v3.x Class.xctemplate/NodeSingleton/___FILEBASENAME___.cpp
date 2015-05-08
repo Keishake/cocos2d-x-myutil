@@ -11,7 +11,7 @@
 USING_NS_CC;
 using namespace std;
 
-static ___FILEBASENAME___ *m_instance = NULL;
+static ___FILEBASENAME___ *m_instance = nullptr;
 
 ___FILEBASENAME___::___FILEBASENAME___()
 {
@@ -20,7 +20,7 @@ ___FILEBASENAME___::___FILEBASENAME___()
 
 ___FILEBASENAME___::~___FILEBASENAME___()
 {
-    m_instance = NULL;
+    m_instance = nullptr;
 }
 
 ___FILEBASENAME___* ___FILEBASENAME___::getInstance()
