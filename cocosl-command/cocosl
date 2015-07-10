@@ -1,0 +1,16 @@
+#! /usr/bin/env ruby
+
+filename = "./.cocos_version"
+if FileTest.exist?(filename)
+  LOCAL_COCOS_CONSOLE_ROOT = File.read(filename).chomp
+  command = "#{LOCAL_COCOS_CONSOLE_ROOT}/cocos #{ARGV.join(" ")}"
+  exec command
+else
+  print 'input COCOS_CONSOLE_ROOT -> '
+  cocos_root = STDIN.gets
+  cocos_root.chomp!
+  File.write(filename, cocos_root)
+  print "create .cocos_version file! \n"
+end
+
+
